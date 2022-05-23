@@ -51,17 +51,14 @@
       </div>
     </div>
 
-
-
     <div th:if="${totalPages > 0}" class="pagination">
 
-<!--      <a href="#">&laquo;</a>-->
+<!--<a href="#">&laquo;</a>-->
       <span th:each="pageNumber: ${#numbers.sequence(1, totalPages)}">
       <a th:href="@{/all_schools(page=${pageNumber})}"
          th:text="${pageNumber}"
-         th:class="${pageNumber== currentPage} ? active"><a/>
-
-    </span>
+         th:class="${pageNumber== currentPage} ? active"></a>
+      </span>
       </div>
 
 
@@ -124,17 +121,12 @@
 <!--    </div>-->
 <!--    </div>-->
 
-
-
-
-
-
     <!-- Bottom Section  -->
     <div class="bottom">
       <!-- logo and address  -->
       <div class="logo_address">
         <!-- Logo section  -->
-        <div class="logoo">
+        <div class="logo">
           <a href="index.html"><img src="images/logo.jpg" alt="" /></a>
         </div>
         <!-- Address section  -->
